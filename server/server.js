@@ -3,7 +3,7 @@ const app = express()
 const cors = require('cors')
 const Songs = require('./models')
 const seed = require('./db/seed')
-const PORT = 5000
+const PORT = 5001
 
 // processing json and allowing cors
 app.use(express.json())
