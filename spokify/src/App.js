@@ -1,24 +1,49 @@
-import logo from './logo.svg';
 import './App.css';
+
+// Card Component
+function Songcard () {
+  return(
+    <div class="card">
+    <img src='assets/placeholder.png' class='cardimg'></img>
+    <div class="container">
+      <h4><b>Song Name</b></h4>
+      <p>Other Info</p>
+    </div>
+  </div>
+  )
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+      {/* Navigation */}
+ <div class='nav'>
+  <img src='assets/albumicon.png' class='navimage'></img>
+  <img src='assets/musicicon.png' class='navimage'></img>
+ </div>
+ 
+ {/* The Cards */}
+<div class='flex-container'>
+<Songcard />
+<Songcard />
+<Songcard />
+<Songcard />
+<Songcard />
+<Songcard />
+<Songcard />
+<Songcard />
+<Songcard />
+<Songcard />
+<Songcard />
+<Songcard />
+</div>
+
+ {/* The Searchbar */}
+ <div><input type="text" placeholder="Search..."></input>
+ </div>
+
+  </div>
   );
 }
 
