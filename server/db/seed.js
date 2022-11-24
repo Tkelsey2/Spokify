@@ -10,22 +10,29 @@ async function seed(){
         {
             title: 'Lithium',
             artist: 'Nirvana',
-            rating: 4
+            rating: 4,
+            album: 'Nevermind',
+            img: ''
         }, 
         {
             title: 'Mans not hot',
             artist: 'Big Shaq',
-            rating: 5
+            rating: 5,
+            album:'Mans not hot (the remixes)',
+            img:''
         },
         {
             title: 'CBAT',
             artist: 'Hudson Mohawke',
-            rating: 1
+            rating: 1,
+            album: 'Satin Panthers'
         },
         {
             title: 'The pretender',
             artist: 'Foo Fighters',
-            rating: 5
+            rating: 5,
+            album:'Echoes,Silence,Patience & Grace',
+            img: ''
         }
 
     ])
