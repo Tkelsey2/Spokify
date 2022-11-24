@@ -21,6 +21,14 @@ Songs.init({
     rating:{
         type: DataTypes.INTEGER,
         allowNull: false
+    },
+    album: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    img:{
+        type: DataTypes.STRING,
+        allowNull: true
     }
 },
 {
