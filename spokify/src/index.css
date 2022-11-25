@@ -25,25 +25,31 @@ code {
     width: 120px;
     padding: 10px 10px 60px 10px;
   }
+  .navimage:hover {
+    opacity: 70%;
+    transition: 0.3s;
+  }
 
   /* The searchbar */
 input {
   border: 3px solid #ff00d3;
-  box-shadow: 0 0px 13px 0 #ff00d3;
+  box-shadow: 0 0px 13px 0 #000000;
   border-radius: 10px;
   background-color: var(--background-colour);
   padding: 6px;
   color: black;
-  font-size: 17px;
+  font-size: 25px;
   position: fixed;
   bottom: 10%;
-  right: 50%;
+  left: 50%;
   transition: 0.3s;
   outline: none;
+  width:300px;
+  height: 45px;
+  margin-left: -150px;
   }
-
   input:hover {
-    box-shadow: 0 0px 25px 0 #ff00d3;
+    box-shadow: 0 0px 50px 0 #000000;
   }
 
 /* The Cards */
@@ -75,11 +81,4 @@ input {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-/* Mobile Responsive */
-@media (max-width: 800px) {
-  .flex-container {
-    flex-direction: column;
-  }
 }

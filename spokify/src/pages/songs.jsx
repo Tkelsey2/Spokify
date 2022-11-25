@@ -1,16 +1,16 @@
-import './App.css';
-import Songcard from './components/songcard';
-import Searchbar from './components/searchbar'
-import Navbar from './components/navbar'
-function App() {
+
+import Songcard from '../components/songcard';
+import Searchbar from '../components/searchbar'
+import Navbar from '../components/navbar'
+function Songs() {
   return (  
-    <div className="App">
+    <div className="Songs">
 
     {/* Navigation */}
 <Navbar />
  
  {/* The Cards */}
-<div className='flex-container'>
+<div class='flex-container'>
 <Songcard />
 <Songcard />
 <Songcard />
@@ -27,10 +27,9 @@ function App() {
 
  {/* The Searchbar */}
  <Searchbar />
- 
 
   </div>
   );
 }
 
-export default App;
+export default Songs;
